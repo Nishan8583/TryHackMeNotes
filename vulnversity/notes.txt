@@ -1,0 +1,7 @@
+1. Recon  nmap -sV <machines ip>
+2. gobuster directory listing gobuster dir -u http://<ip>:3333 -w <word list location>
+3. Check for file upload first, to upload reverse shell
+4. linEnum.sh, systemctl should be run by normal user only, if setuid bit set, we could create our own service, that runs as root i.e a service to connect
+5. Create service, netcat listen, then start the service
+amdin users = syslog
+/usr/bin/pkexec runs command as another user

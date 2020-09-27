@@ -1,0 +1,45 @@
+1. install metasploit https://securityonline.info/install-metasploit-on-ubuntu-linux-mint/
+2. msdb init # to initialize database
+3. backend uses postgres
+4. msfconsle > db_status # command inside metasploit gives db status
+5. ?/help command
+6. search "string to search"
+7. use # to activate the module
+8. info # after selecting to get information aobut it
+9. db_nmap -sV <IP>  # nmap scans, nmap should be preinstalled obviously
+10. hosts # check info about the scanned host in the database
+11. services # check what services are running from scanned hosts stored in db
+12. search "multi/handler"  # the column "#" has number which u can directly use
+ex: use 6
+13. use multi/hanlder  # to handle the connection we get from exploited server, ex: meterpreter for different stuff, to set options, and use exploit for different
+14. post exploitation commands
+	- getuid # get user info
+	- migrate # to migrate to another process
+	- sysinfo # get system info
+	- load kiwi# load module, here mimikatz
+	- getprivs # check privlize
+	- upload, run # upload files, run runs msf module
+	- run post/windows/gather/checkvm  # to check if vm
+	- run post/multi/recon/local_exploit_suggester  # suggests exlpoit
+	- run post/windows/manage/enable_rdp  # to enable rdp
+	- shell  # to spwan shell
+	- run autorun -h  # see help to shift to another process
+	- auxiliary/server/socks4a  # for some stuff
+
+. vulns # to list all the vulnerabilities regarding the host	
+
+
+# connect > to check if we can communicate with this host
+# getg and setg gets and sets global variable accordingly
+# get gets insgle global variable
+# unset sets to null or zero
+# spool command to save the commands 
+# save to save the current configs and variables
+####
+Modules
+1. exlpoit= holds the exploit
+2. payload = shellcode, used with exploit to execute code
+3. auxiliary = for scanning
+4. post = for post exploitation obviously
+5. encoder = for payload obfuscation
+6. load = to load modules, cause not every modules is loaded by default

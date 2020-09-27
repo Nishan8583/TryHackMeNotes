@@ -5,7 +5,7 @@
 5. ?/help command
 6. search "string to search"
 7. use # to activate the module
-8. info # after selecting to get information aobut it
+8. info # after selecting to get information aobut the module chosen
 9. db_nmap -sV <IP>  # nmap scans, nmap should be preinstalled obviously
 10. hosts # check info about the scanned host in the database
 11. services # check what services are running from scanned hosts stored in db
